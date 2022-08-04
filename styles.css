@@ -1,0 +1,82 @@
+body{
+    background-color: #facccc;
+}
+#textEditor, #styleEditor, #contentPreviewer, #addChoose, #whatDoYouWant{
+    min-height: 100px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color: #fff1dc;
+    margin-bottom: 10px;
+}
+
+#whatDoYouWant{
+    display: none;
+    width: 70vw;
+    margin: auto;
+}
+
+#wantRadio2{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#textEditorArea{
+    padding: 5px;
+    min-height: 100px;
+    background-color: #f9ffd2;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+#tabs{
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+#textEditor{
+    display: block;
+}
+
+#styleEditor{
+    display: none;
+}
+
+#textColors, #backgroundColors{
+    width: 200px;
+    height: 200px;
+    display: none;
+    flex-wrap: wrap;
+}
+
+.oneColor, .oneBgColor {
+    width: 33.333%;
+    height: 33.333%;
+}
+
+#addChoose{
+    display: none;
+}
+
+#tableContainer, #listDiv {
+    flex-wrap: wrap;
+    display: none;
+    width:100%;
+} 
+.tableDiv1, #listDiv1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+#everything{
+    width: 70vw;
+    margin: auto;
+}
+input {
+    margin-bottom: 7px;
+}
+#tableSubmitter{
+    margin-top: 10px;
+}
+button {
+    padding: 5px;
+} 

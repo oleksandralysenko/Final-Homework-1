@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="everything"> 
+    <div id="contentPreviewer">
+        <h2>Text text text</h2>
+        <p>Text text text </p>
+        <p>Text text text </p>
+        <p>Text text text </p>
+        <p>Text text text text </p>
+    </div>
+
+    <div id="tabs">
+        <button id="editBtn">Edit</button>
+        <button id="styleBtn">Style</button>
+    </div>
+
+    <div> 
+    <div id="textEditor">  
+        <div id="textEditorArea" contenteditable="true"> </div>
+
+        <button id="addBtn" >Add</button>
+        <button id="saveBtn" >Save</button>
+    </div>
+
+    
+    <div id="styleEditor"> 
+        <div id="formsBlock">
+           
+                <h3>Font Size:</h3>
+                <input type="radio" class="fontSizeRadio" name='fontSize' value="12px">12px
+                <input type="radio" class="fontSizeRadio" name='fontSize' value="14px">14px
+                <input type="radio" class="fontSizeRadio" name='fontSize' value="16px">16px
+                <input type="radio" class="fontSizeRadio" name='fontSize' value="18px">18px
+                <input type="radio" class="fontSizeRadio" name='fontSize' value="20px">20px
+
+                      
+                <h3>Font family:</h3>
+                <select id="selectFontFamily">
+                    <option class="fontFam" value="" selected disabled>Choose option</option>
+                    <option class="fontFam" value="cursive">cursive</option>
+                    <option class="fontFam" value="fantasy">fantasy</option>
+                    <option class="fontFam" value="monospace">monospace</option>
+                    <option class="fontFam" value="sens-serif">sans-serif</option>
+                </select>
+                
+                <h3>Colors:</h3>
+                <button id='textColorBtn'>Color of a text</button>
+                <button id='backgroundColorBtn'>Background Color</button>
+                <div id="textColors">
+                    <div class="oneColor" style="background-color: lightsalmon;"> </div>
+                    <div class="oneColor" style="background-color: lightgreen;"> </div>
+                    <div class="oneColor" style="background-color: lightblue;"> </div>
+                    <div class="oneColor" style="background-color: lightgoldenrodyellow;"> </div>
+                    <div class="oneColor" style="background-color: black;"> </div>
+                    <div class="oneColor" style="background-color: violet;"> </div>
+                    <div class="oneColor" style="background-color: white;"> </div>
+                    <div class="oneColor" style="background-color: lightpink;"> </div>
+                    <div class="oneColor" style="background-color: lightcyan;"> </div>
+                </div>
+
+                <div id="backgroundColors"> 
+                    <div class="oneBgColor" style="background-color: lightsalmon;"> </div>
+                    <div class="oneBgColor" style="background-color: lightgreen;"> </div>
+                    <div class="oneBgColor" style="background-color: lightblue;"> </div>
+                    <div class="oneBgColor" style="background-color: lightgoldenrodyellow;"> </div>
+                    <div class="oneBgColor" style="background-color: black;"> </div>
+                    <div class="oneBgColor" style="background-color: violet;"> </div>
+                    <div class="oneBgColor" style="background-color: white;"> </div>
+                    <div class="oneBgColor" style="background-color: lightpink;"> </div>
+                    <div class="oneBgColor" style="background-color: lightcyan;"> </div>
+                </div>
+
+                <h3>Style</h3>
+                <input type="checkbox" name="styleCheckbox">Bold text
+                <input type="checkbox" name="styleCheckbox">Cursive text
+        </div>
+    
+    </div>
+    </div>
+
+
+    <div id="addChoose">
+        <input type="radio" name="addChooseRadio">table
+        <input type="radio" name="addChooseRadio">list
+    </div>
+
+    <div id="tableContainer">
+        <div class="tableDiv1">
+            <p style="width: 25%;">Count TR</p>
+            <input type="text" style="width: 70%;" id="trCounter" placeholder="Count TR">
+            <p style="width: 25%;">Count TD</p>
+            <input type="text" style="width: 70%;" id="tdCounter" placeholder="Count TD">
+    </div>
+
+        <p style=font-size:20px><b>Add style to your table</b></p>
+        <div class="tableDiv1">
+            <p style="width: 25%;">Width of TD:</p>
+            <input type="text" style="width: 70%;" id="tdWidth" placeholder="Width of TD (in px)">
+            <p style="width: 25%;">Height of TD:</p>
+            <input type="text" style="width: 70%;" id="tdHeight" placeholder="Height of TD (in px)">
+        </div>
+
+        <br>
+
+        <div class="tableDiv1">
+            <p style="width: 15%;">Width of a border:</p>
+            <input type="text" style="width: 10%;" id="borderWidth" placeholder="Width (in px)">
+
+            <p style="width: 15%;">Type of a border:</p>
+            <select name="borderType" class="marks" id="borderType" style="width: 10%;">
+                <option value="dashed">dashed</option>
+                <option value="solid">solid</option>
+                <option value="dotted">dotted</option>
+            </select>
+
+            <p style="width: 15%;">Color of a border:</p>
+            <select name="borderColor" class="marks" id="borderColor" style="width: 10%;">
+                <option value="black">black</option>
+                <option value="pink">pink</option>
+                <option value="purple">purple</option>
+            </select>
+        </div>
+
+        <button id = "tableSubmitter">Create the table</button>
+    </div>
+
+    <div id="listDiv">
+        <div id="listDiv1">
+            <p style="width: 25%;">Count Li</p>
+            <input type="text" style="width: 70%;" id="liCounter" placeholder="Count Li">
+            <p style="width: 25%;">Type of marks</p>
+            <select name="typeOfMarks" class="marks" id="marksType" style="width: 70%;">
+                <option value="circle">circle</option>
+                <option value="disc">disc</option>
+                <option value="square">square</option>
+            </select>
+        </div>
+
+        <button id="liSubmitter">Create list</button>
+    </div>
+    </div>
+
+</div>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
